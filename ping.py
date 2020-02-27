@@ -16,11 +16,11 @@ else:
 """
 
  ## DETECTAR COMPUTADORAS ACTIVAS
-"""
+
 import os
 red = "200.33.171.0/24"
 os.system("nmap -sn " + red)
-"""
+
 
 
 ## DETECTAR PUERTOS ABIERTOS
@@ -40,6 +40,7 @@ os.system("nmap -O " + computadora)
 
 
 ##CICLO PARA VERIFICAR TODAS LAS COMPUTADORAS ENCENDIDAS EN EL TEC
+"""
 import os
 c=0
 red="200.33.171."
@@ -50,11 +51,11 @@ for x in range(30):
         c+=1
 
 print("Numero de hosts encendidos: "+str(c))
-
+"""
 
 
 """ 
-RESULTADOS DEL NMAP:
+RESULTADOS DEL NMAP PARA VERIFICAR CUANTAS COMPUTADORAS HAY ENCENDIDAS EN EL TEC:
 
 Nmap scan report for delfin2.itmorelia.edu.mx (200.33.171.11)
 Host is up (0.018s latency).
